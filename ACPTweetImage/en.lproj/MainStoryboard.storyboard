@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ACPViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I42-Sr-Osy">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="286" id="6Ya-TP-ahC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Choose Image">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseImage:" destination="2" eventType="touchDown" id="x20-xf-zqh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vt6-8R-kfH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209" id="Fiw-6f-y3b"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejs-Sw-Vv1">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Tweet It!">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tweet:" destination="2" eventType="touchDown" id="yYk-M4-8fe"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZPR-6G-S8X"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-6u-FQi">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="tSU-c8-WPZ"/>
+                                </constraints>
+                            </slider>
+                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lYT-cj-hVP"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="red" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d49-3P-W25">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSs-HL-gGr">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gja-ob-j4J">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mME-qE-q3m">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="filterButtonPressed:" destination="2" eventType="touchDown" id="b84-kc-egp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGP-yR-bGR">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="bKg-Av-v5s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Set">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="filterButtonPressed:" destination="2" eventType="touchDown" id="c4d-mo-sy5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ef7-6u-FQi" firstAttribute="trailing" secondItem="lYT-cj-hVP" secondAttribute="trailing" type="default" id="2qT-lV-aEc"/>
+                            <constraint firstAttribute="trailing" secondItem="nGP-yR-bGR" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="3P9-An-wdU"/>
+                            <constraint firstItem="nGP-yR-bGR" firstAttribute="leading" secondItem="ZPR-6G-S8X" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="6S5-MK-gbJ"/>
+                            <constraint firstItem="ZPR-6G-S8X" firstAttribute="leading" secondItem="lYT-cj-hVP" secondAttribute="leading" type="default" id="9CP-Mx-Lye"/>
+                            <constraint firstAttribute="bottom" secondItem="nGP-yR-bGR" secondAttribute="bottom" constant="14" id="A6p-wN-S41"/>
+                            <constraint firstItem="Ejs-Sw-Vv1" firstAttribute="top" secondItem="I42-Sr-Osy" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="GZ0-5J-hfL"/>
+                            <constraint firstItem="ZPR-6G-S8X" firstAttribute="top" secondItem="lYT-cj-hVP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="OBl-05-U5B"/>
+                            <constraint firstAttribute="trailing" secondItem="Ejs-Sw-Vv1" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="PWk-V4-dpD"/>
+                            <constraint firstItem="vt6-8R-kfH" firstAttribute="top" secondItem="Ejs-Sw-Vv1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="TEe-C5-Ofn"/>
+                            <constraint firstAttribute="trailing" secondItem="vt6-8R-kfH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="TZ9-Ym-7NF"/>
+                            <constraint firstItem="d49-3P-W25" firstAttribute="leading" secondItem="vt6-8R-kfH" secondAttribute="leading" type="default" id="X2P-yN-IPB"/>
+                            <constraint firstItem="vt6-8R-kfH" firstAttribute="leading" secondItem="Ejs-Sw-Vv1" secondAttribute="leading" type="default" id="YDU-4F-mq5"/>
+                            <constraint firstItem="lYT-cj-hVP" firstAttribute="leading" secondItem="ef7-6u-FQi" secondAttribute="leading" type="default" id="adt-FU-SGs"/>
+                            <constraint firstItem="Ejs-Sw-Vv1" firstAttribute="leading" secondItem="I42-Sr-Osy" secondAttribute="leading" type="default" id="b0e-KM-lNr"/>
+                            <constraint firstItem="Gja-ob-j4J" firstAttribute="leading" secondItem="WSs-HL-gGr" secondAttribute="leading" type="default" id="f2T-7n-1bi"/>
+                            <constraint firstItem="I42-Sr-Osy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="hqm-ZD-JL8"/>
+                            <constraint firstItem="nGP-yR-bGR" firstAttribute="top" secondItem="mME-qE-q3m" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="j0X-ah-r5V"/>
+                            <constraint firstItem="nGP-yR-bGR" firstAttribute="leading" secondItem="lYT-cj-hVP" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="jlz-vS-7mF"/>
+                            <constraint firstItem="d49-3P-W25" firstAttribute="top" secondItem="ef7-6u-FQi" secondAttribute="top" type="default" id="khp-VL-mWc"/>
+                            <constraint firstAttribute="trailing" secondItem="mME-qE-q3m" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lIa-mX-PGi"/>
+                            <constraint firstAttribute="trailing" secondItem="I42-Sr-Osy" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="mkL-AK-dYY"/>
+                            <constraint firstItem="WSs-HL-gGr" firstAttribute="leading" secondItem="d49-3P-W25" secondAttribute="leading" type="default" id="msb-e8-xyg"/>
+                            <constraint firstItem="ZPR-6G-S8X" firstAttribute="top" secondItem="Gja-ob-j4J" secondAttribute="top" type="default" id="o9p-3I-oLI"/>
+                            <constraint firstItem="d49-3P-W25" firstAttribute="baseline" secondItem="mME-qE-q3m" secondAttribute="baseline" type="default" id="rcb-fK-q2V"/>
+                            <constraint firstItem="lYT-cj-hVP" firstAttribute="top" secondItem="WSs-HL-gGr" secondAttribute="top" type="default" id="vDD-4E-YpS"/>
+                            <constraint firstItem="lYT-cj-hVP" firstAttribute="top" secondItem="ef7-6u-FQi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="yEg-OA-CJc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CyD-y8-xbg"/>
+                    <connections>
+                        <outlet property="blue" destination="ZPR-6G-S8X" id="dVw-Ju-6Md"/>
+                        <outlet property="green" destination="lYT-cj-hVP" id="eeE-wM-ovx"/>
+                        <outlet property="imageView" destination="vt6-8R-kfH" id="HQl-9u-EU5"/>
+                        <outlet property="red" destination="ef7-6u-FQi" id="kke-Nz-2F2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="ACPViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ACPViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="chooseImage:"/>
+                <relationship kind="action" name="filterButtonPressed:"/>
+                <relationship kind="action" name="tweet:"/>
+                <relationship kind="outlet" name="blue" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="green" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="red" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
